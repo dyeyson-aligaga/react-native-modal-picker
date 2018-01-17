@@ -176,9 +176,6 @@ export default class ModalPicker extends BaseComponent {
     }
 
     render() {
-
-        console.log('Hello Im here');
-
         const dp = (
           <Modal transparent={true} ref="modal" visible={this.state.modalVisible} onRequestClose={this.onCancel} animationType={this.state.animationType}>
           {this.renderOptionList()}
