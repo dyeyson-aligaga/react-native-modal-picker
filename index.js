@@ -27,15 +27,15 @@ const propTypes = {
     onChange: PropTypes.func,
     onCancel: PropTypes.func,
     initValue: PropTypes.string,
-    style: RNViewPropTypes.style,
-    selectStyle: RNViewPropTypes.style,
-    optionStyle: RNViewPropTypes.style,
+    style: ViewPropTypes.style,
+    selectStyle: ViewPropTypes.style,
+    optionStyle: ViewPropTypes.style,
     optionTextStyle: Text.propTypes.style,
-    sectionStyle: RNViewPropTypes.style,
+    sectionStyle: ViewPropTypes.style,
     sectionTextStyle: Text.propTypes.style,
-    cancelStyle: RNViewPropTypes.style,
+    cancelStyle: ViewPropTypes.style,
     cancelTextStyle: Text.propTypes.style,
-    overlayStyle: RNViewPropTypes.style,
+    overlayStyle: ViewPropTypes.style,
     cancelText: PropTypes.string
 };
 
