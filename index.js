@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import {
     View,
+    ViewPropTypes as RNViewPropTypes,
     StyleSheet,
     Dimensions,
     Modal,
@@ -13,6 +14,8 @@ import {
     TouchableOpacity,
     Platform
 } from 'react-native';
+
+const ViewPropTypes = RNViewPropTypes || View.propTypes;
 
 import styles from './style';
 import BaseComponent from './BaseComponent';
@@ -24,15 +27,15 @@ const propTypes = {
     onChange: PropTypes.func,
     onCancel: PropTypes.func,
     initValue: PropTypes.string,
-    style: View.propTypes.style,
-    selectStyle: View.propTypes.style,
-    optionStyle: View.propTypes.style,
+    style: RNViewPropTypes.style,
+    selectStyle: RNViewPropTypes.style,
+    optionStyle: RNViewPropTypes.style,
     optionTextStyle: Text.propTypes.style,
-    sectionStyle: View.propTypes.style,
+    sectionStyle: RNViewPropTypes.style,
     sectionTextStyle: Text.propTypes.style,
-    cancelStyle: View.propTypes.style,
+    cancelStyle: RNViewPropTypes.style,
     cancelTextStyle: Text.propTypes.style,
-    overlayStyle: View.propTypes.style,
+    overlayStyle: RNViewPropTypes.style,
     cancelText: PropTypes.string
 };
 
